@@ -1,19 +1,13 @@
-name: Hello world
-on: 
-  push:
-    branches:
-      - main
-      - develop
-      - 'release/**'
-  pull_request:
-    branches:
-      -main
+name: Git Action Practice
+on: push
 jobs:
-  build:
+   action-practice: 
     runs-on: ubuntu-latest
     steps:
-      - name: Build Step
-        run: echo "hello, ${{  vars.MY_NAME }}"
+      - name: Checkout the code
+        uses: action/checkout@v4
+      - name: Print index.html file
+        run: cat index.html
   
         
       
