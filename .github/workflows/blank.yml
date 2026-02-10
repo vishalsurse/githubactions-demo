@@ -1,4 +1,4 @@
-name: Git Action Practice
+name: Git Action Practice cicd
 on: push
 jobs:
    action-practice: 
